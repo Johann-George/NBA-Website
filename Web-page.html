@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basketball legends</title>
+	<style type="text/css">
+		@media (min-width: 800px){
+			.container{
+				display: flex;
+			}
+			.row{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-evenly;
+			}
+		}
+		body{
+			margin: 0px;
+			padding: 0px;
+			color: black;
+			background-color: whitesmoke;
+			font-family: Arial;
+		}
+		#navi{
+			width: 10%;
+			height: 10%;
+			position: relative;
+			z-index: 1;
+
+		}
+		.logo img{
+			height: 53px;
+			width: 50px;
+			
+		}
+		nav{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: dimgrey;
+		}
+		ul{
+			list-style-type: none;
+			display: flex;
+		}
+		.menu li a{
+			height: 20px;
+			line-height: 25px;
+			margin: 3px;
+			padding: 0px 22px;
+			display: flex;
+			font-size: 18px;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: 500;
+			letter-spacing: 0.5px;
+			font-family: sans-serif;
+			color: white;
+		}
+		.menu li a:hover{
+			background-color: red;
+			color: white;
+			border-radius: 5px;
+			box-shadow: 2px 2px 3px white;
+			transition: 0.5s;
+		}
+		.intro{
+			margin-top: 50px;
+			margin-left: 10%;
+			margin-right: 10%;
+			color: balck;
+		}
+		#intro1{
+			margin-top: 150px;
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+		.button{
+			border-radius: 5px;
+		}
+		
+		.button:link, .button:visited{
+			background-color: white;
+			color: black;
+			border: 2px solid red;
+			padding: 5px;
+			text-align: center;
+			display: inline-block;
+			text-decoration: none;
+			margin-left: 10px;
+		}
+		.button:hover, .button:active{
+			background-color: red;
+			color: white;
+			transition: 0.5s;
+		}
+		.block{
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+		
+		.container{
+			
+			margin: 20px;
+			align-items: center;
+			max-width: 46%;
+			max-height: 46%;
+			background-color: dimgrey;
+			border-radius: 5%;
+		}
+		.container:hover{
+			transform: scale(1.05);
+			box-shadow: 0 0 10px;
+			transition:0.5s;
+		}
+		.image{
+			padding-left: 5%;
+			max-width: 50%;
+			max-height: 75%;
+		}
+		.avenge{
+			padding: 5%;
+			font-size: 90%;
+			color: white;
+
+		}
+		.block1{
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+		table{
+			font-family: arial;
+			border-collapse: no-collapse;
+			width: 100%;
+
+		}
+		td, th{
+			border: 5px solid darkred;
+			text-align: left;
+			padding: 18px;
+			color: darkblue;
+			font-size: 1.2em;
+		}
+		th{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<section id="navi">
+		<nav>
+			<a class="logo" href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fandscape.com%2Fwp-content%2Fuploads%2F2017%2F06%2Fnbalogo.jpg%3Fw%3D700&imgrefurl=https%3A%2F%2Fandscape.com%2Ffeatures%2Fhall-of-fame-jerry-west-designer-alan-siegel-nba-logo%2F&tbnid=VTY8Jl4xm5attM&vet=12ahUKEwiOubDbudL3AhVSyKACHW3JAt0QMygBegUIARDhAQ..i&docid=7AQUPUsdtFYGcM&w=700&h=393&q=nba%20logo&ved=2ahUKEwiOubDbudL3AhVSyKACHW3JAt0QMygBegUIARDhAQ" target="_blank"><img src="NBA.png"></a>
+			<ul class="menu">
+				<li><a href="#intro1">Home</a></li>
+				<li><a href="#comics">Divisions</a></li>
+				<li><a href="#players">Players</a></li>
+				<li><a href="#teams">Teams</a></li>
+			</ul>
+		</nav>
+	</section>
+
+	<section class="intro" id="intro1">
+		<h1>National Basketball Association</h1>
+		<p>The National Basketball Association (NBA) is a professional basketball league in North America. The league is composed of 30 teams (29 in the United States and 1 in Canada) and is one of the major professional sports leagues in the United States and Canada.</p>
+		<p>The league was founded in New York City on June 6, 1946, as the Basketball Association of America (BAA).[1] It changed its name to the National Basketball Association on August 3, 1949, after merging with the competing National Basketball League (NBL).</p>
+		<p>For more information click this button  <a class="button" href="https://en.wikipedia.org/wiki/National_Basketball_Association#:~:text=The%20National%20Basketball%20Association%20(NBA,the%20United%20States%20and%20Canada." target="_blank">National Basketball Association</a></p>
+	</section>
+	<section class="intro">
+		<h1 id="comics">NBA Divisions</h1>
+		<p>Divisions are frequently neglected in the NBA. People always pay more attention to the Eastern and Western Conferences and have little idea that divisions play a major role in determining the schedule and matches of teams.</p>
+		<p>What are the 6 NBA divisions? These are the 6 divisions in the NBA: Atlantic, Central, Southeast (Eastern Conference) and Northwest, Pacific, Southwest (Western Conference). In each of these divisions, 5 teams are split equally, fighting for the playoffs spots</p>
+		<p>Click this button for more information  <a class="button" href="https://basketballnoise.com/what-are-the-6-nba-divisions/" target="_blank">NBA Divisions</a></p>
+	</section>
+	<div class="block">
+		<h1 id="players">NBA Players</h1>
+		<div class="row">
+			<div class="container">
+				<img class="image" src="Jordan.jpg">
+				<div class="avenge">
+					<h3>Michael Jordan</h3>
+					<p>Michael Jeffrey Jordan (born February 17, 1963), also known by his initials MJ, is an American businessman and former professional basketball player. He played fifteen seasons in the National Basketball Association 
+					(NBA), winning six NBA championships with the Chicago Bulls.</p>
+					<a class="button" href="https://en.wikipedia.org/wiki/Michael_Jordan" target="_blank">Read profile</a>
+				</div>
+			</div>
+			<div class="container">
+				<img class="image" src="LBJ.jpg" >
+				<div class="avenge">
+					<h3>Lebron James</h3>
+					<p>LeBron Raymone James Sr. (born December 30, 1984) is an American professional basketball player for the Los Angeles Lakers of the National Basketball Association (NBA). Nicknamed "King James", he is widely considered one of the greatest players of all time and is often compared to Michael Jordan in debates over the greatest basketball player ever.</p>
+					<a class="button" href="https://en.wikipedia.org/wiki/LeBron_James" target="_blank">Read Profile</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container">
+				<img class="image" src="Kobe.jpg">
+				<div class="avenge">
+					<h3>Kobe Bryant</h3>
+					<p>Kobe Bean Bryant (August 23, 1978 – January 26, 2020) was an American professional basketball player. A shooting guard, he spent his entire 20-year career with the Los Angeles Lakers in the National Basketball Association (NBA). Widely regarded as one of the greatest basketball players of all time.</p>
+					<a class="button" href="https://en.wikipedia.org/wiki/Kobe_Bryant" target="_blank">Read Profile</a>
+				</div>
+			</div>
+			<div class="container">
+				<img class="image" src="Curry.jpg">
+				<div class="avenge">
+					<h3>Stephen Curry</h3>
+					<p>Wardell Stephen "Steph" Curry II (born March 14, 1988) is an American professional basketball player for the Golden State Warriors of the National Basketball Association (NBA). Widely regarded as one of the greatest point guards of all time, and as the greatest shooter in NBA history, Curry is credited with revolutionizing basketball by inspiring teams and players to routinely utilize the three-point shot. </p>
+					<a class="button" href="https://en.wikipedia.org/wiki/Stephen_Curry" target="_blank">Read Profile</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container">
+				<img class="image" src="Kevin_Durant.jpeg">
+				<div class="avenge">
+					<h3>Kevin Durant</h3>
+					<p>Kevin Wayne Durant (born September 29, 1988) is an American professional basketball player for the Brooklyn Nets of the National Basketball Association (NBA).He played nine seasons with the franchise, which became the Oklahoma City Thunder in 2008, before signing with the Golden State Warriors in 2016, winning consecutive NBA championships in 2017 and 2018.</p>
+					<a class="button" href="https://en.wikipedia.org/wiki/Kevin_Durant" target="_blank">Read profile</a>
+				</div>
+			</div>
+			<div class="container">
+				<img class="image" src="Giannis.jpg" >
+				<div class="avenge">
+					<h3>Giannis Antetokounmpo</h3>
+					<p>Giannis Sina Ugo Antetokounmpo (born Adetokunbo; December 6, 1994) is a Greek professional basketball player for the Milwaukee Bucks of the National Basketball Association (NBA). Antetokounmpo's nationality, in addition to his size, speed, strength, and ball-handling skills have earned him the nickname "Greek Freak".</p>
+					<a class="button" href="https://en.wikipedia.org/wiki/Giannis_Antetokounmpo" target="_blank">Read Profile</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="block1">
+		<h1 id="teams">NBA Teams</h1>
+		<table>
+			<thead>
+			<tr style="background-color: grey;">
+				<th>Ranking</th>
+				<th>Team Name</th>
+			</tr>
+
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Miami Heat</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Boston Celtics</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Milwaukee Bucks</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Philadelphia 76ers</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Toronto Raptors</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Chicago Bulls</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Brooklyn Nets</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>Atlanta Hawks</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Cleveland Cavaliers</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>Charlotte Hornets</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+</body>
+</html>
